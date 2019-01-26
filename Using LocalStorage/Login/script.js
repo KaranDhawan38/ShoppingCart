@@ -123,9 +123,9 @@ getId.addEventListener("submit",function(event){
 													{	
 													  sessionStorage.setItem("currentUser",current);	
 													  if(obj.selection=="admin")
-													  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Seller/index.html");	  
+													  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Seller/index.html");	  
                                                       else
-													  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Buyer/index.html");
+													  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Buyer/index.html");
                                                       event.preventDefault();												  
 													}
                                                     else

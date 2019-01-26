@@ -1,0 +1,433 @@
+h1{
+	color:#55286F;
+	font-size:50;
+	font-family:Broadway;
+	margin-bottom:15;
+  } 
+  
+ a{
+	text-decoration: none; 	
+  }  
+  
+.top{
+	 position:fixed;
+	 top:-40;
+	 z-index:3;
+	 width:1335;
+	 background-color:#FFEDEA;
+	 border-bottom-style:solid;
+	 border-bottom-color:#F4ACB7;
+	 border-bottom-width:2;
+    }  
+
+#itemList{
+	       position:relative;
+	       background-color:white;
+		   width:830;
+		   top:74;
+		   border-style:solid;
+		   border-color:#F4ACB7;
+		   border-width:5;
+		   border-radius:10px;
+         }
+		 
+#cart{
+	   position:fixed;
+       background-color:white;
+	   left:845;
+	   width:480;
+	   border-style:solid;
+	   border-color:#F4ACB7;
+	   border-width:5;
+	   border-radius:10px;
+	   margin-left:10;
+	   top:83;
+	   height:538;
+	   overflow:scroll;
+	 }		
+
+li{
+	color:#55286F;
+    font-size:25;
+    font-weight:900;
+	float:left;
+	margin-top:5;
+	margin-left:20;
+	margin-right:15;
+	width:120;
+	text-align:center;
+	word-wrap: break-word;
+  } 
+ 
+ul{
+	list-style-type:none;
+	float:left;
+	margin-top:5;
+  }	  
+
+.items{
+	    background-color:#FFCAD4;
+	    margin-bottom:10;
+		overflow:auto;
+		border-width:1;
+		border-style:solid;
+		border-radius:20px;
+		margin-left:10;
+		margin-right:10;
+      }
+	  
+.items:hover{
+	          background-color:#F4ACB7;
+	          margin-bottom:10;
+		      overflow:auto;
+		      border-width:2;
+		      border-style:solid;
+			  margin-left:10;
+		      margin-right:10;
+            } 	
+
+.index{
+	    color:white;
+	    background-color:#55286F;
+		width:40;
+		border-radius:30px;
+		margin-right:20;
+		margin-left:-5;
+      }	
+
+.heading{
+	      background-color:#55286F;
+	      margin-bottom:10;
+		  margin-top:10;
+		  overflow:auto;
+		  border-width:1;
+		  border-style:solid;
+		  border-radius:20px;
+		  margin-left:10;
+		  margin-right:10;
+        }	  
+
+.i1{
+	  color:white;
+	  width:42;
+	  margin-right:20;
+	  margin-left:-5;
+   }   
+
+.i2{
+	 color:white;
+     font-size:25;
+     font-weight:900;
+	 float:left;
+	 margin-top:5;
+	 margin-left:20;
+	 margin-right:15;
+	 width:120;
+	 text-align:center;
+	 word-wrap: break-word;
+   }
+   
+.inputFields{
+	          border-width:5;
+			  border-color:pink;
+			  width:200;
+              margin-top:7;
+              margin-left:15;			  
+			  margin-bottom:10;
+			  border-radius:10px;
+              font-size:15;	
+			  font-weight:550;
+              color:#55286F;			  
+		    }
+
+.addSub{
+	     margin-top:12;
+		 font-size:20;
+		 font-weight:600;
+		 color:#55286F;
+       }			
+	   
+.quantity{
+	       margin-top:12;
+		   font-size:20;
+		   font-weight:600;
+		   color:white;
+		   background-color:#55286F;
+		   border-color:#55286F;
+         }	   
+
+.addCart{
+	      margin-left:10;
+	      margin-top:12;
+		  font-size:20;
+		  color:white;
+		  background-color:#55286F;
+		  font-weight:500;
+		  border-radius:10px;
+		  border-color:#55286F;
+        }
+
+.head{
+	   color:white;
+	   margin-top:15;
+       font-size:25;
+       font-weight:900;
+	   text-align:center;
+	   word-wrap: break-word;
+     }
+	
+/*for details of items in list*/	
+.c2{
+	 color:white;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:10;
+	 margin-right:5;
+	 width:70;
+	 text-align:center;
+   }
+   
+ .ul1{
+	  margin-left:-40;
+	  list-style-type:none;
+	  float:left;
+	  margin-top:5; 
+     } 
+
+.ul2{
+	  margin-left:-120;
+	  list-style-type:none;
+	  float:left;
+	  margin-top:5; 
+    }
+
+.c5{
+	 color:white;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:30;
+	 margin-right:0;
+	 width:85;
+	 text-align:center;
+   }	
+   
+.c6{
+	 color:white;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:75;
+	 margin-right:0;
+	 width:85;
+	 text-align:right;
+   }	   
+	 
+.c3{
+	 color:white;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:30;
+	 margin-right:5;
+	 width:100;
+	 text-align:left;
+   }	
+
+.total{
+	      background-color:#55286F;
+	      margin-bottom:10;
+		  margin-top:-10;
+		  overflow:auto;
+		  border-width:1;
+		  border-style:solid;
+		  border-radius:20px;
+		  margin-left:10;
+		  margin-right:10;
+        }	
+
+/*for items in cart div*/		
+.itemsList{
+	        background-color:#FFCAD4;
+	        margin-bottom:10;
+			margin-top:-10;
+		    overflow:auto;
+		    border-width:1;
+		    border-style:solid;
+		    border-radius:20px;
+		    margin-left:10;
+		    margin-right:10;
+          }	
+		  
+.itemsList:hover{
+	             background-color:#F4ACB7;
+	             margin-bottom:10;
+				 margin-top:-10;
+		         overflow:auto;
+		         border-width:2;
+		         border-style:solid;
+			     border-radius:20px;
+		         margin-left:10;
+		         margin-right:10;
+                } 			  
+		  
+.c4{
+	 color:#55286F;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:-25;
+	 margin-right:37;
+	 width:70;
+	 text-align:center;
+   }
+  
+.c7{
+	 color:#55286F;
+     font-size:17;
+     font-weight:600;
+	 float:left;
+	 margin-top:5;
+	 margin-left:-15;
+	 margin-right:24;
+	 width:90;
+	 text-align:center;
+   }  
+
+.delete{
+	     background-color:#F26157;
+		 color:white;
+		 border-color:black;
+		 border-radius:5px;
+		 font-size:20;
+		 margin-left:5;
+		 margin-top:7;
+       }	  
+	   
+.delete:hover{
+	             background-color:red;
+             }	
+
+.checkout{
+	       color:white;
+		   font-weight:200;
+		   font-size:25;
+	       background-color:#55286F;
+	       margin-bottom:20;
+		   margin-top:0;
+		   border-width:4;
+		   border-color:#6F2DBD;
+		   border-radius:20px;
+		   margin-left:150;
+		   margin-right:10;
+		   width:150;
+		   text-align:center;
+         }
+
+.checkout:hover{
+	             font-weight:600;
+	             color:white;
+				 font-size:25;
+				 background-color:#63458A;
+				 margin-bottom:20;
+				 margin-top:0;
+				 border-width:4;
+				 border-radius:20px;
+				 border-color:#6F2DBD;
+				 margin-left:150;
+				 margin-right:10;
+				 width:150;
+				 text-align:center;
+               }
+
+.fade{
+	  margin-top:-8;
+	  margin-left:-8;
+	  position:fixed;
+	  z-index:5;
+	  background-color:black;
+	  width:6000;
+	  height:6000;
+	  opacity:0.7;
+	  display:none;
+     }
+
+.form{
+	   margin-left:470;
+	   margin-top:69;
+	   position:fixed;
+	   background-color:#FFE5D9;
+	   width:400;
+	   z-index:6;
+	   border-style:solid;
+	   border-width:4;
+	   border-radius:20px;
+       border-color:#6F2DBD;
+	   display:none;
+     }	 
+	 
+.f1{
+	   color:#55286F;
+	   margin-top:25;
+       font-size:30;
+       font-weight:900;
+	   text-align:center;
+	   word-wrap: break-word;
+   }	 
+  
+.input{
+	          border-width:5;
+			  border-color:#6F2DBD;
+			  width:360;
+              margin-top:10;			  
+			  margin-bottom:10;
+			  border-style:solid;
+			  border-radius:10px;
+              font-size:20;	
+			  font-weight:100;
+              color:black;			  
+		    }
+
+.inputButton{
+	         border-width:5;
+	         border-color:#6F2DBD;
+		     color:white;
+			 margin-right:10;
+			 margin-top:20;
+		     background-color:#55286F;
+		     font-size:20;
+		     border-radius:10px;
+		     font-weight:100;
+            }	
+
+.inputButton:hover{
+	             border-width:5;
+	             border-color:#6F2DBD;
+		         background-color:#6F2DBD;
+				 margin-right:10;
+				 margin-top:20;
+				 color:white;
+		         font-size:20;
+		         border-radius:10px;
+		         font-weight:100;
+            }
+
+.logout{
+	    color:#55286F;
+	    font-size:20;
+	    font-weight:700;
+	    margin-left:1150;
+		margin-top:-60;
+		text-align:center;
+		cursor:pointer;
+       }	
+
+.error{
+	    color:red;
+      }	   
