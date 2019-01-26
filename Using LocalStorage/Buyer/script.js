@@ -19,6 +19,8 @@ function load()
 {
   /////retrive stored items that are available/////////////////////	
   count=localStorage.getItem("storedCount");
+  if(count==null)
+  count=0;	  
   for(var i=0;i<count;i++)
   {
 	var data=localStorage.getItem("storedData"+i);
