@@ -28,7 +28,7 @@ function Load(){
 				 if(current==null)
                  {
 	              alert("Session expired please login!!!");
-                  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Login/index.html");	
+                  window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Login/index.html");	
                  }
 				 else
 				 {
@@ -127,7 +127,7 @@ function addOrders(data,i)
 																			order.Status=newStatus;
 																			var str=JSON.stringify(order);
                                                                             localStorage.setItem(name+"order"+j,str);
-                                                                            window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Seller/index.html");																			
+                                                                            window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Seller/index.html");																			
 																		    break;  
 																		  }
 							                                             }
@@ -396,5 +396,5 @@ function refresh()
 
 //////////////Loging out of page///////////////////////////////////////////
 document.getElementById('logout').addEventListener("click",function(event){
-	                                                                        window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Login/index.html");
+	                                                                        window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Login/index.html");
                                                                           });

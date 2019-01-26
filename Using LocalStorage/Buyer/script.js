@@ -30,7 +30,7 @@ function load()
   if(current==null)
   {
 	alert("Session expired please login!!!");
-    window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Login/index.html");	
+    window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Login/index.html");	
   }
   else
   {
@@ -425,7 +425,7 @@ document.getElementById("form").addEventListener("submit",function(event){
                                                                             cartCount=0;
                                                                             save();
                                                                             event.preventDefault();
-                                                                            window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Buyer/index.html"); 																			
+                                                                            window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Buyer/index.html"); 																			
 																		   }
 																		   ////////////else do nothing and give error///////////////////
 																		   else
@@ -464,5 +464,5 @@ function placeOrder(data,i)
 
 //////////////Loging out of page///////////////////////////////////////////
 document.getElementById('logout').addEventListener("click",function(event){
-	                                                                        window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/Cart/Using LocalStorage/Login/index.html");
+	                                                                        window.location.replace("file:///C:/Users/Karans/Desktop/HTML/UCA/ShoppingCart/Using LocalStorage/Login/index.html");
                                                                           });
