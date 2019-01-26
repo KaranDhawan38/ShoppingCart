@@ -6,6 +6,8 @@ var userCount=0;
 function load()
 {
 	userCount=localStorage.getItem("userCount");
+	if(userCount==null)
+	userCount=0;	
 }
 
 ///////////////When user creates account/////////////////
