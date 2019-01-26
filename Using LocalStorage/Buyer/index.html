@@ -1,0 +1,103 @@
+<html>
+ <head>
+  <title>
+   ShoppersPoint
+  </title>
+  <link rel="shortcut icon" href="C:\Users\Karans\Desktop\HTML\UCA\Cart\Using LocalStorage\logo.png">
+  <link rel="stylesheet"
+        type="text/css"
+	    href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){  
+                                $('#check').click(function(){
+								                              if(cartCount>0)
+															  {
+															    $('#back').fadeIn(500);
+															    $("#inform").slideDown(500);	
+															  }
+								                            });
+								$('#back').click(function(){
+															  $("#inform").slideUp(500);
+															  $('#back').fadeOut(700);
+								                           });
+                                $('#cancel').click(function(){
+															  $("#inform").slideUp(500);
+															  $('#back').fadeOut(700);
+								                             })														   
+			                  });		
+  </script>			
+</head>
+<body bgcolor="#FFEDEA" onload="load()">
+ <div class="form" id="inform">
+  <p align="center" class="f1">Please fill in order details</p>
+  <form align="center" id="form">
+   <input title="Name" type="text" placeholder="Name..." class="input" maxlength="15" required>
+   <label class="error" id="mailerr"></label>
+   <input title="Email" type="email" placeholder="Email..." id="mail" class="input" required>
+   <label class="error" id="passerr"></label>
+   <input title="password" type="password" placeholder="Password..." id="pass" class="input" required>
+   <input title="Address" type="address" id="add" placeholder="Address..." class="input" required>
+   <input type="submit" value="Place Order" class="inputButton">
+   <input type="button" value="Cancel" class="inputButton" id="cancel">
+  </form>
+ </div>
+ <div class="fade" id="back">
+ </div>
+ <div class="top">
+ <a href="index.html">
+  <h1 align="center">Shoppers Point</h1>
+ </a>
+  <p class="logout" id="logout">(logout)</p>
+ </div>
+ <div id="itemList">
+  <div class="heading">
+   <p class="head">Available Items</p>
+  </div>
+  <div class="heading">
+   <ul>
+    <li class="i1">Sno</li>
+    <li class="i2">Name</li>
+    <li class="i2">Price (INR)</li>
+    <li class="i2">Discription</li>
+    <input type="text" id="search" class="inputFields" placeholder="Search...">
+   </ul>
+  </div>
+ </div>
+ <div id="cart">
+  <div class="heading">
+   <p class="head">Cart</p>
+  </div>
+  <div class="heading">
+    <ul class="ul1">
+     <li class="c2">Sno</li>
+     <li class="c2">Name</li>
+     <li class="c2">Quantity</li>
+     <li class="c2">Price</li>
+    </ul>
+  </div>
+  <div id="cartItems">
+  </div>
+  <div class="total">
+    <ul class="ul1">
+	<li class="c3">Total price:<li>
+	<li class="c3" id="total">Rs 0</li>
+	</ul>
+  </div>
+  <button class="checkout" id="check">Checkout</button>
+  <div class="heading">
+   <p class="head">Placed orders</p>
+  </div>
+  <div class="heading">
+    <ul class="ul2">
+     <li class="c6">Id</li>
+     <li class="c5">Status</li>
+     <li class="c5">Time<br>(UTC)</li>
+     <li class="c5">Address</li>
+    </ul>
+  </div>
+  <div id="orders">
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>

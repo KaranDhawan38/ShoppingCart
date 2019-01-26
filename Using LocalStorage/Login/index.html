@@ -1,0 +1,92 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+  <link rel="shortcut icon" href="C:\Users\Karans\Desktop\HTML\UCA\Cart\Using LocalStorage\logo.png">
+  <title>ShoppersPoint | Login</title>
+  <link rel="stylesheet"
+        type="text/css"
+	    href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+							   $("#inform").slideDown(600);
+                               $('#signUp').click(function(){
+							                                    $('#mail').val("");
+																$('#password').val("");
+																$('#mailerr').html("");
+																$('#passworderr').html("");
+															    $("#inform").slideUp(600);
+                                                                $("#signup").delay(600).slideDown(600);
+															});
+							   $('#cancel').click(function(){
+                                                                $('#name').val("");
+                                                                $('#email').val("");	
+                                                                $('#pass').val("");	
+                                                                $('#code').val("");	
+                                                                $('#nameerr').html("");
+                                                                $('#emailerr').html("");	
+                                                                $('#codeerr').html("");																	
+															    $("#signup").slideUp(600);
+															    $("#inform").delay(600).slideDown(600);
+                                                           });	
+                               $('#admin').click(function(){								
+															    $(".code").slideDown(400);
+                                                           });	
+                               $('#user').click(function(){								
+															    $(".code").slideUp(400);
+																$("codeerr").innerHTML="";
+                                                           });															   
+			                  });		
+  </script>			
+ </head>
+ <body onload=load()>
+ <div class="container-fluid">
+  <div class="row">     
+   <div class="col-sm-12 text-center">
+    <a href="index.html" style="text-decoration: none;">
+     <h1 class="header">Shoppers Point</h1>
+    </a>
+   </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-sm-3"></div>
+        <div class="col-sm-6 form text-center" id="inform">
+                <p class="f1">Please Login</p>
+                <form id="signInForm">
+                 <label class="err" id="mailerr"></label>
+                 <input title="Email" type="email" placeholder="Email..." id="mail" class="input" required><br>
+                 <label class="err" id="passworderr"></label>
+                 <input title="password" type="password" placeholder="Password..." id="password" class="input" required><br>
+                 <input type="submit" value="Sign in" class="inputButton">
+                 <input type="button" value="Sign up" class="inputButton" id="signUp">
+                </form>
+            </div> 
+        <div class="col-sm-3"></div>
+  </div>                 
+ <div class="row"> 
+ <div class="col-sm-3"></div>           
+ <div class="col-sm-6 form1" id="signup">
+  <p align="center" class="f1">Plese fill in your information</p>
+  <form align="center" id="signUpForm">   <label class="err" id="nameerr"></label>
+   <input title="Name" type="name" placeholder="Name..." class="input1" id='name' maxlength="15" required><br>
+   <label class="err" id="emailerr"></label>
+   <input title="Email" type="email" placeholder="Email..." class="input1" id="email" required><br>
+   <input title="password" type="password" placeholder="Password..." class="input1" id="pass" required><br>
+   <p class="f2">Who are you: <input type="radio" name="status" value="admin" id="admin"required>Admin<input type="radio" name="status" value="user" id="user"required>User</p>
+   <label class="err" id="codeerr"></label>
+   <input type="password" placeholder="Code..." class="code" title="code" id="code"><br>
+   <input type="submit" value="Sign up" class="inputButton">
+   <input type="button" value="Cancel" class="inputButton" id="cancel">
+  </form>
+ </div>
+ <div class="col-sm-3"></div>  
+ </div>
+ </div>
+ <script src="script.js"></script>
+ </body>
+</html>
